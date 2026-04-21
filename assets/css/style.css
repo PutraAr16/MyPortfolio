@@ -369,7 +369,7 @@ img {
         top: 0;
         right: -100%;
         width: 280px;
-        height: 100vh;
+        height: 100dvh;
         background: var(--bg-card);
         border-left: 1px solid var(--border-color);
         padding: 80px 30px 30px;
@@ -483,7 +483,7 @@ img {
    HERO SECTION
    ================================================ */
 .hero-section {
-    min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     align-items: center;
     position: relative;
