@@ -1,0 +1,1107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Dwi Putra Ardiansyah — Web Developer specializing in modern web applications, responsive design, and interactive user experiences."
+    />
+    <meta
+      name="keywords"
+      content="web developer, full-stack, portfolio, HTML, CSS, JavaScript, React, Node.js, Karawang"
+    />
+    <meta name="author" content="Dwi Putra Ardiansyah" />
+    <title>Dwi Putra Ardiansyah | Web Developer</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/logofix.png">
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- AOS Animate On Scroll -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- ===================== PRELOADER ===================== -->
+    <div id="preloader">
+      <div class="preloader-inner">
+        <div class="preloader-ring"></div>
+        <span class="preloader-text">&lt;/&gt;</span>
+      </div>
+    </div>
+
+    <!-- ===================== CURSOR ===================== -->
+    <div class="custom-cursor" id="customCursor"></div>
+    <div class="custom-cursor-trail" id="customCursorTrail"></div>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#hero" id="navbarBrand">
+          <span class="brand-bracket">&lt;</span>Dwi<span class="brand-dot"
+            >Putra</span
+          >Ardiansyah<span class="brand-bracket">/&gt;</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          id="navToggler"
+          aria-label="Toggle navigation"
+        >
+          <span class="toggler-bar"></span>
+          <span class="toggler-bar"></span>
+          <span class="toggler-bar"></span>
+        </button>
+        <div class="navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#hero" id="navHome">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about" id="navAbout">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills" id="navSkills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects" id="navProjects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience" id="navExperience"
+                >Experience</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" id="navContact">Contact</a>
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn-nav-cta ms-lg-3" id="navHireMe">
+            <i class="bi bi-send-fill me-1"></i> Hire Me
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <section id="hero" class="hero-section">
+      <!-- Animated Background Particles -->
+      <canvas id="heroParticles"></canvas>
+
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div
+            class="col-lg-6 hero-content"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <div class="hero-badge">
+              <span class="badge-dot"></span>
+              Available for fulltime work
+            </div>
+            <div class="hero-badge">
+              <span class="badge-dot"></span>
+              Available for freelance work
+            </div>
+            <h1 class="hero-title">
+              Hi, I'm <span class="gradient-text">Dwi Putra Ardiansyah</span>
+            </h1>
+            <div class="hero-typewriter">
+              <span class="typewriter-prefix">I build </span>
+              <span class="typewriter-text" id="typewriterText"></span>
+              <span class="typewriter-cursor">|</span>
+            </div>
+            <p class="hero-description">
+              Web Developer with < 1 years of experience crafting beautiful,
+              performant, and user-centric digital experiences that drive
+              business growth.
+            </p>
+            <div class="hero-actions">
+              <a
+                href="#projects"
+                class="btn btn-primary-custom"
+                id="heroViewWork"
+              >
+                <i class="bi bi-folder2-open me-2"></i>View My Work
+              </a>
+              <a
+                href="/assets/cv.pdf"
+                class="btn btn-outline-custom"
+                id="heroDownloadCV"
+                download
+              >
+                <i class="bi bi-download me-2"></i>Download CV
+              </a>
+            </div>
+            <div class="hero-socials">
+              <a
+                href="https://github.com/PutraAr16"
+                target="_blank"
+                class="social-link"
+                id="socialGithub"
+                aria-label="GitHub"
+                ><i class="bi bi-github"></i
+              ></a>
+              <a
+                href="https://linkedin.com/in/dwiputraardiansyah/"
+                target="_blank"
+                class="social-link"
+                id="socialLinkedin"
+                aria-label="LinkedIn"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/putraardiansyah._/"
+                target="_blank"
+                class="social-link"
+                id="socialInstagram"
+                aria-label="Instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                href="https://facebook.com/putraardiansyah161001"
+                target="_blank"
+                class="social-link"
+                id="socialFacebook"
+                aria-label="Facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 hero-image-col"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <div class="hero-image-wrapper">
+              <div class="hero-image-glow"></div>
+              <img
+                src="assets/img/gambar.png"
+                alt="Dwi Putra Ardiansyah - Web Developer"
+                class="hero-image"
+                id="heroImage"
+              />
+              <!-- Floating code snippets -->
+              <div class="floating-card card-1">
+                <i class="bi bi-braces"></i>
+                <span>React.js</span>
+              </div>
+              <div class="floating-card card-2">
+                <i class="bi bi-filetype-js"></i>
+                <span>JavaScript</span>
+              </div>
+              <div class="floating-card card-3">
+                <i class="bi bi-database"></i>
+                <span>MySQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator">
+        <div class="mouse">
+          <div class="mouse-wheel"></div>
+        </div>
+        <span>Scroll Down</span>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT SECTION ===================== -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header text-center" data-aos="fade-up">
+          <span class="section-tag"
+            ><i class="bi bi-person-fill me-1"></i> About Me</span
+          >
+          <h2 class="section-title">Get to Know Me</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5" data-aos="fade-right" data-aos-duration="800">
+            <div class="about-image-wrapper">
+              <div class="about-image-frame">
+                <img
+                  src="assets/img/inisaya.png"
+                  alt="About Dwi Putra Ardiansyah"
+                  class="about-image"
+                />
+              </div>
+              <div class="about-experience-badge">
+                <span class="exp-number">< 1</span>
+                <span class="exp-text">Years of<br />Experience</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7" data-aos="fade-left" data-aos-duration="800">
+            <div class="about-content">
+              <h3 class="about-subtitle">
+                Passionate Web Developer Based in Karawang
+              </h3>
+              <p class="about-text">
+                I'm a creative developer who enjoys turning ideas into elegant
+                and functional web applications. With a strong foundation in
+                front-end and back-end technologies, I bring a holistic approach
+                to every project I work on.
+              </p>
+              <p class="about-text">
+                My journey in web development began in college. I believe in
+                writing clean, maintainable code and creating beautiful,
+                intuitive interfaces.
+              </p>
+              <div class="about-info-grid">
+                <div class="info-item">
+                  <i class="bi bi-geo-alt-fill"></i>
+                  <div>
+                    <span class="info-label">Location</span>
+                    <span class="info-value">Karawang, West Java</span>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <i class="bi bi-envelope-fill"></i>
+                  <div>
+                    <span class="info-label">Email</span>
+                    <span class="info-value"
+                      >putraardiansyah1610@gmail.com</span
+                    >
+                  </div>
+                </div>
+                <div class="info-item">
+                  <i class="bi bi-mortarboard-fill"></i>
+                  <div>
+                    <span class="info-label">Degree</span>
+                    <span class="info-value">B.S. Computer Science</span>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <i class="bi bi-translate"></i>
+                  <div>
+                    <span class="info-label">Languages</span>
+                    <span class="info-value">Indonesian (Bahasa), English</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS SECTION ===================== -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header text-center" data-aos="fade-up">
+          <span class="section-tag"
+            ><i class="bi bi-gear-fill me-1"></i> My Skills</span
+          >
+          <h2 class="section-title">Technologies & Tools</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Skill Categories -->
+        <div
+          class="skills-filter text-center mb-5"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <button class="filter-btn active" data-filter="all" id="filterAll">
+            All
+          </button>
+          <button class="filter-btn" data-filter="frontend" id="filterFrontend">
+            Frontend
+          </button>
+          <button class="filter-btn" data-filter="backend" id="filterBackend">
+            Backend
+          </button>
+          <button class="filter-btn" data-filter="tools" id="filterTools">
+            Tools
+          </button>
+        </div>
+
+        <div class="row g-4 skills-grid" id="skillsGrid">
+          <!-- Frontend Skills -->
+          <div
+            class="col-6 col-md-4 col-lg-3 skill-card-col"
+            data-category="frontend"
+            data-aos="zoom-in"
+            data-aos-delay="0"
+          >
+            <div class="skill-card">
+              <div class="skill-icon" style="--skill-color: #e34f26">
+                <i class="bi bi-filetype-html"></i>
+              </div>
+              <h5 class="skill-name">HTML5</h5>
+              <!-- <div class="skill-bar">
+                <div class="skill-fill" data-width="95"></div>
+              </div>
+              <span class="skill-percent">95%</span> -->
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-3 skill-card-col"
+            data-category="frontend"
+            data-aos="zoom-in"
+            data-aos-delay="50"
+          >
+            <div class="skill-card">
+              <div class="skill-icon" style="--skill-color: #1572b6">
+                <i class="bi bi-filetype-css"></i>
+              </div>
+              <h5 class="skill-name">CSS3</h5>
+              <!-- <div class="skill-bar">
+                <div class="skill-fill" data-width="92"></div>
+              </div>
+              <span class="skill-percent">92%</span> -->
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-3 skill-card-col"
+            data-category="frontend"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <div class="skill-card">
+              <div class="skill-icon" style="--skill-color: #f7df1e">
+                <i class="bi bi-filetype-js"></i>
+              </div>
+              <h5 class="skill-name">JavaScript</h5>
+              <!-- <div class="skill-bar">
+                <div class="skill-fill" data-width="90"></div>
+              </div>
+              <span class="skill-percent">90%</span> -->
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-3 skill-card-col"
+            data-category="frontend"
+            data-aos="zoom-in"
+            data-aos-delay="150"
+          >
+            <div class="skill-card">
+              <div class="skill-icon" style="--skill-color: #61dafb">
+                <i class="bi bi-braces"></i>
+              </div>
+              <h5 class="skill-name">React</h5>
+              <!-- <div class="skill-bar">
+                <div class="skill-fill" data-width="88"></div>
+              </div>
+              <span class="skill-percent">88%</span> -->
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-3 skill-card-col"
+            data-category="frontend"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <div class="skill-card">
+              <div class="skill-icon" style="--skill-color: #7952b3">
+                <i class="bi bi-bootstrap-fill"></i>
+              </div>
+              <h5 class="skill-name">Bootstrap</h5>
+              <!-- <div class="skill-bar">
+                <div class="skill-fill" data-width="93"></div>
+              </div>
+              <span class="skill-percent">93%</span> -->
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-3 skill-card-col"
+            data-category="frontend"
+            data-aos="zoom-in"
+            data-aos-delay="250"
+          >
+            <div class="skill-card">
+              <div class="skill-icon" style="--skill-color: #3178c6">
+                <i class="bi bi-filetype-tsx"></i>
+              </div>
+              <h5 class="skill-name">TypeScript</h5>
+              <!-- <div class="skill-bar">
+                <div class="skill-fill" data-width="82"></div>
+              </div>
+              <span class="skill-percent">82%</span> -->
+            </div>
+          </div>
+
+          <!-- Backend Skills -->
+          <div
+            class="col-6 col-md-4 col-lg-3 skill-card-col"
+            data-category="backend"
+            data-aos="zoom-in"
+            data-aos-delay="0"
+          >
+            <div class="skill-card">
+              <div class="skill-icon" style="--skill-color: #339933">
+                <i class="bi bi-hdd-stack-fill"></i>
+              </div>
+              <h5 class="skill-name">Node.js</h5>
+              <!-- <div class="skill-bar">
+                <div class="skill-fill" data-width="87"></div>
+              </div>
+              <span class="skill-percent">87%</span> -->
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-3 skill-card-col"
+            data-category="backend"
+            data-aos="zoom-in"
+            data-aos-delay="50"
+          >
+            <div class="skill-card">
+              <div class="skill-icon" style="--skill-color: #777bb4">
+                <i class="bi bi-filetype-php"></i>
+              </div>
+              <h5 class="skill-name">PHP</h5>
+              <!-- <div class="skill-bar">
+                <div class="skill-fill" data-width="78"></div>
+              </div>
+              <span class="skill-percent">78%</span> -->
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-3 skill-card-col"
+            data-category="backend"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <div class="skill-card">
+              <div class="skill-icon" style="--skill-color: #47a248">
+                <i class="bi bi-database-fill"></i>
+              </div>
+              <h5 class="skill-name">MongoDB</h5>
+              <!-- <div class="skill-bar">
+                <div class="skill-fill" data-width="83"></div>
+              </div>
+              <span class="skill-percent">83%</span> -->
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-3 skill-card-col"
+            data-category="backend"
+            data-aos="zoom-in"
+            data-aos-delay="150"
+          >
+            <div class="skill-card">
+              <div class="skill-icon" style="--skill-color: #4479a1">
+                <i class="bi bi-database"></i>
+              </div>
+              <h5 class="skill-name">MySQL</h5>
+              <!-- <div class="skill-bar">
+                <div class="skill-fill" data-width="80"></div>
+              </div>
+              <span class="skill-percent">80%</span> -->
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div
+            class="col-6 col-md-4 col-lg-3 skill-card-col"
+            data-category="tools"
+            data-aos="zoom-in"
+            data-aos-delay="0"
+          >
+            <div class="skill-card">
+              <div class="skill-icon" style="--skill-color: #f05032">
+                <i class="bi bi-git"></i>
+              </div>
+              <h5 class="skill-name">Git</h5>
+              <!-- <div class="skill-bar">
+                <div class="skill-fill" data-width="90"></div>
+              </div>
+              <span class="skill-percent">90%</span> -->
+            </div>
+          </div>
+          <!-- <div
+            class="col-6 col-md-4 col-lg-3 skill-card-col"
+            data-category="tools"
+            data-aos="zoom-in"
+            data-aos-delay="50"
+          >
+            <div class="skill-card">
+              <div class="skill-icon" style="--skill-color: #2496ed">
+                <i class="bi bi-box-seam-fill"></i>
+              </div>
+              <h5 class="skill-name">Docker</h5>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="75"></div>
+              </div>
+              <span class="skill-percent">75%</span>
+            </div>
+          </div> -->
+          <div
+            class="col-6 col-md-4 col-lg-3 skill-card-col"
+            data-category="tools"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <div class="skill-card">
+              <div class="skill-icon" style="--skill-color: #f24e1e">
+                <i class="bi bi-palette-fill"></i>
+              </div>
+              <h5 class="skill-name">Figma</h5>
+              <!-- <div class="skill-bar">
+                <div class="skill-fill" data-width="85"></div>
+              </div>
+              <span class="skill-percent">85%</span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS SECTION ===================== -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header text-center" data-aos="fade-up">
+          <span class="section-tag"
+            ><i class="bi bi-code-slash me-1"></i> My Projects</span
+          >
+          <h2 class="section-title">Featured Work</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Project Filter -->
+        <div
+          class="project-filter text-center mb-5"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <button
+            class="filter-btn active"
+            data-filter="all"
+            id="projFilterAll"
+          >
+            All
+          </button>
+          <button
+            class="filter-btn"
+            data-filter="web-app"
+            id="projFilterWebApp"
+          >
+            Web Apps
+          </button>
+          <button
+            class="filter-btn"
+            data-filter="frontend"
+            id="projFilterFrontend"
+          >
+            Frontend
+          </button>
+          <button
+            class="filter-btn"
+            data-filter="fullstack"
+            id="projFilterFullstack"
+          >
+            Full-Stack
+          </button>
+        </div>
+
+        <div class="row g-4 projects-grid" id="projectsGrid">
+          <!-- Project 1 -->
+          <div
+            class="col-md-6 col-lg-4 project-item"
+            data-category="fullstack"
+            data-aos="fade-up"
+            data-aos-delay="0"
+          >
+            <div class="project-card">
+              <div class="project-image">
+                <img src="assets/img/laundry.png" alt="System Laundry" />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="https://solusilaundry.vercel.app/"
+                      class="project-link"
+                      title="Live Demo"
+                      ><i class="bi bi-box-arrow-up-right"></i
+                    ></a>
+                    <a
+                      href="https://github.com/PutraAr16/Solusi-Laundry"
+                      class="project-link"
+                      title="Source Code"
+                      ><i class="bi bi-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-category">Full-Stack</div>
+                <h4 class="project-title">Solusi Laundry</h4>
+                <p class="project-desc">
+                  Modern laundry service application with attractive visuals,
+                  location-based ordering, and timely finish estimates.
+                </p>
+                <div class="project-tech">
+                  <span>React.js</span><span>Node.js</span><span>PosgreSQL</span
+                  ><span>Express.js</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div
+            class="col-md-6 col-lg-4 project-item"
+            data-category="web-app"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="project-card">
+              <div class="project-image">
+                <img src="assets/img/sporton.png" alt="E-Commerce" />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="https://sporton-fe-vercel-deploy-onca.vercel.app/"
+                      class="project-link"
+                      title="Live Demo"
+                      ><i class="bi bi-box-arrow-up-right"></i
+                    ></a>
+                    <a
+                      href="https://github.com/PutraAr16/sporton-fe-vercel-deploy"
+                      class="project-link"
+                      title="Source Code"
+                      ><i class="bi bi-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-category">Web App</div>
+                <h4 class="project-title">SportOn</h4>
+                <p class="project-desc">
+                  Comprehensive online sports equipment store with intuitive
+                  interface, interest-based product recommendations, and
+                  guaranteed original products.
+                </p>
+                <div class="project-tech">
+                  <span>React.js</span><span>MongoDB</span><span>Next.js</span
+                  ><span>Express.js</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div
+            class="col-md-6 col-lg-4 project-item"
+            data-category="frontend"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="project-card">
+              <div class="project-image">
+                <img src="assets/img/NewPOS.png" alt="WeatherPulse App" />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="https://newposnew.vercel.app/"
+                      class="project-link"
+                      title="Live Demo"
+                      ><i class="bi bi-box-arrow-up-right"></i
+                    ></a>
+                    <a
+                      href="https://github.com/PutraAr16/NewPOS"
+                      class="project-link"
+                      title="Source Code"
+                      ><i class="bi bi-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-category">Frontend</div>
+                <h4 class="project-title">Point Of Sale</h4>
+                <p class="project-desc">
+                  Integrated sales management system with user-friendly
+                  interface, real-time inventory tracking, and business
+                  performance analysis reports.
+                </p>
+                <div class="project-tech">
+                  <span>JavaScript</span><span>CSS3</span><span>API</span
+                  ><span>HTML5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE SECTION ===================== -->
+    <section id="experience" class="section experience-section">
+      <div class="container">
+        <div class="section-header text-center" data-aos="fade-up">
+          <span class="section-tag"
+            ><i class="bi bi-briefcase-fill me-1"></i> Experience</span
+          >
+          <h2 class="section-title">Work & Education</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="row g-5">
+          <!-- Work Experience -->
+          <div class="col-lg-6" data-aos="fade-right">
+            <h3 class="timeline-heading">
+              <i class="bi bi-laptop me-2"></i>Experience
+            </h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                  <span class="timeline-date">August 2023 - December 2023</span>
+                  <h4 class="timeline-title">Web Development Internship</h4>
+                  <p class="timeline-company">
+                    <i class="bi bi-building me-1"></i>PT Kinema Systrans
+                    Multimedia (Infinite Learning)
+                  </p>
+                  <p class="timeline-desc">
+                    A versatile Web Developer skilled in full-stack development
+                    and research-driven UI/UX design. Complemented by
+                    foundational knowledge in Cyber Security, Cloud Computing,
+                    and Digital Marketing, I bring strong communication,
+                    collaboration, and adaptability to dynamic project
+                    environments.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div class="col-lg-6" data-aos="fade-left">
+            <h3 class="timeline-heading">
+              <i class="bi bi-mortarboard me-2"></i>Education
+            </h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                  <span class="timeline-date">2020 — 2024</span>
+                  <h4 class="timeline-title">B.S. Computer Science</h4>
+                  <p class="timeline-company">
+                    <i class="bi bi-mortarboard me-1"></i>University of
+                    Singaperbangsa Karawang
+                  </p>
+                  <p class="timeline-desc">
+                    Graduated cumlaude. Focused on Web Development.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                  <span class="timeline-date">2026</span>
+                  <h4 class="timeline-title">Web Programming</h4>
+                  <p class="timeline-company">
+                    <i class="bi bi-patch-check me-1"></i>Futuremakers Youth
+                    Employability Programme
+                  </p>
+                  <p class="timeline-desc">
+                    A Web Developer experienced in the complete Software
+                    Development Life Cycle (SDLC) and version control using
+                    Git/GitHub. Proficient in building structured web interfaces
+                    with semantic HTML and developing interactive, dynamic user
+                    experiences using JavaScript, DOM manipulation, and the
+                    Fetch API. Capable of delivering fully functional full-stack
+                    applications through robust relational database management
+                    using MySQL.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                  <span class="timeline-date">2025</span>
+                  <h4 class="timeline-title">
+                    Frontend Web Dev Using React JS & Next JS
+                  </h4>
+                  <p class="timeline-company">
+                    <i class="bi bi-patch-check me-1"></i>CodingIn
+                  </p>
+                  <p class="timeline-desc">
+                    A modern Web Developer specializing in the React and Next.js
+                    ecosystem. I build scalable, production-ready full-stack
+                    applications emphasizing type-safe, clean, and maintainable
+                    architecture. Proficient in modern tooling—including Bun,
+                    Tailwind CSS, Zustand, and the TanStack ecosystem—combined
+                    with robust backend integrations like JWT authentication,
+                    SWR, and middleware. Supported by a disciplined professional
+                    workflow utilizing Git/GitHub, Husky for code quality, and
+                    comprehensive Markdown documentation.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                  <span class="timeline-date">2023</span>
+                  <h4 class="timeline-title">Junior Web Developer</h4>
+                  <p class="timeline-company">
+                    <i class="bi bi-patch-check me-1"></i>Badan Nasional
+                    Sertifikasi Profesi
+                  </p>
+                  <p class="timeline-desc">
+                    Trained under BPPTIK Kominfo standards, I possess a strong
+                    foundation in structured programming, clean code practices,
+                    and iterative UI design. I am experienced in developing
+                    text, graphic, and multimedia applications by optimizing
+                    pre-existing libraries. My technical skills are complemented
+                    by a solid understanding of intellectual property rights,
+                    industry best practices, and national ICT development
+                    strategies.
+                  </p>
+                </div>
+              </div>
+              <!-- <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                  <span class="timeline-date">2023</span>
+                  <h4 class="timeline-title">Programming With JavaScript</h4>
+                  <p class="timeline-company">
+                    <i class="bi bi-patch-check me-1"></i>Meta (Coursera)
+                  </p>
+                  <p class="timeline-desc">
+                    Intensive certification testing practices.
+                  </p>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT SECTION ===================== -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header text-center" data-aos="fade-up">
+          <span class="section-tag"
+            ><i class="bi bi-envelope-fill me-1"></i> Contact</span
+          >
+          <h2 class="section-title">Let's Work Together</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Have a project in mind? Let's discuss how we can bring your vision
+            to life.
+          </p>
+        </div>
+
+        <div class="row g-5">
+          <div class="col-lg-5" data-aos="fade-right">
+            <div class="contact-info-wrapper">
+              <button
+                class="contact-card"
+                onclick="
+                  window.location.href = 'mailto:putraardiansyah1610@gmail.com'
+                "
+              >
+                <div class="contact-card-icon">
+                  <i class="bi bi-envelope-fill"></i>
+                </div>
+                <p>Email</p>
+              </button>
+              <button
+                class="contact-card"
+                onclick="window.location.href = 'https://wa.me/6282261541048'"
+              >
+                <div class="contact-card-icon">
+                  <i class="bi bi-whatsapp"></i>
+                </div>
+                <p>WhatsApp</p>
+              </button>
+              <div class="contact-card">
+                <div class="contact-card-icon">
+                  <i class="bi bi-geo-alt-fill"></i>
+                </div>
+                <div>
+                  <p>Karawang, West Java</p>
+                </div>
+              </div>
+              <div class="contact-socials">
+                <a
+                  href="https://github.com/PutraAr16"
+                  class="contact-social-link"
+                  aria-label="GitHub"
+                  ><i class="bi bi-github"></i
+                ></a>
+                <a
+                  href="https://linkedin.com/in/dwiputraardiansyah"
+                  class="contact-social-link"
+                  aria-label="LinkedIn"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+                <a
+                  href="https://facebook.com/putraardiansyah161001"
+                  class="contact-social-link"
+                  aria-label="Facebook"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+                <a
+                  href="https://instagram.com/putraardiansyah._"
+                  class="contact-social-link"
+                  aria-label="Instagram"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7" data-aos="fade-left">
+            <form class="contact-form" id="contactForm">
+              <!-- Form is handled by JavaScript → Google Apps Script -->
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="form-floating-custom">
+                    <input
+                      type="text"
+                      id="contactName"
+                      name="name"
+                      class="form-control-custom"
+                      placeholder="Your Name"
+                      required
+                    />
+                    <label for="contactName">Your Name</label>
+                    <i class="bi bi-person field-icon"></i>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating-custom">
+                    <input
+                      type="email"
+                      id="contactEmail"
+                      name="email"
+                      class="form-control-custom"
+                      placeholder="Your Email"
+                      required
+                    />
+                    <label for="contactEmail">Your Email</label>
+                    <i class="bi bi-envelope field-icon"></i>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating-custom">
+                    <input
+                      type="text"
+                      id="contactSubject"
+                      name="_subject"
+                      class="form-control-custom"
+                      placeholder="Subject"
+                      required
+                    />
+                    <label for="contactSubject">Subject</label>
+                    <i class="bi bi-chat-left-text field-icon"></i>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating-custom">
+                    <textarea
+                      id="contactMessage"
+                      name="message"
+                      class="form-control-custom"
+                      placeholder="Your Message"
+                      rows="5"
+                      required
+                    ></textarea>
+                    <label for="contactMessage">Your Message</label>
+                    <i class="bi bi-pencil-square field-icon"></i>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button
+                    type="submit"
+                    class="btn btn-submit"
+                    id="contactSubmitBtn"
+                  >
+                    <span class="btn-text">Send Message</span>
+                    <span class="btn-loading"
+                      ><i class="bi bi-arrow-repeat"></i
+                    ></span>
+                    <i class="bi bi-send-fill ms-2"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+            <div class="form-success-msg" id="formSuccess">
+              <i class="bi bi-check-circle-fill"></i>
+              <p>Thank you! Your message has been sent successfully.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="footer-copy">
+              &copy; 2026 Dwi Putra Ardiansyah. All rights reserved.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <div class="footer-socials">
+              <a
+                href="https://github.com/PutraAr16"
+                class="contact-social-link"
+                aria-label="GitHub"
+                ><i class="bi bi-github"></i
+              ></a>
+              <a
+                href="https://linkedin.com/in/dwiputraardiansyah"
+                class="contact-social-link"
+                aria-label="LinkedIn"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a
+                href="https://facebook.com/putraardiansyah161001"
+                class="contact-social-link"
+                aria-label="Facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                href="https://instagram.com/putraardiansyah._"
+                class="contact-social-link"
+                aria-label="Instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
